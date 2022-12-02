@@ -1,6 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-
 
 export default function Cart(props) {
     const {cartItems, emptyCart, itemsPrice} = props;
