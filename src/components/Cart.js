@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Cart(props) {
-    const {cartItems, onAddItem, onDeleteItem, itemsPrice} = props;
+    const {cartItems, emptyCart, itemsPrice} = props;
     // const itemsPrice = cartItems.reduce((a,c) => a + c.price, 0);
 
     return (
