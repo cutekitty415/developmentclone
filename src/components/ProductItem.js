@@ -8,12 +8,9 @@ import React from 'react';
 function ProductItem(props) {
 
 	const {onAddItem, onDeleteItem} = props;
-    const [buttonText, setButtonText] = useState('Add to Cart');
     const [buttonTextFav, setButtonTextFav] = useState('Add to Favorites');
-    const [pressed, setPressed] = useState(false);
     const [pressedFavorites, setPressedFavorites] = useState(false);
     const [variantFavorites, setVariantFavorites] = useState("secondary");
-    const [variant, setVariant] = useState("secondary");
 
 
     function addToFavorites(item, pressed){

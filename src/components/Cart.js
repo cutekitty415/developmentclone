@@ -6,10 +6,20 @@ export default function Cart(props) {
 
     return (
         <div>
+
             {cartItems.length !== -1 && (
                 <div className="row">
-                    <div classNamme="col-1 text-right">
-                        <h5>${itemsPrice}</h5>
+                    <div>
+                        <h3>Favorites:</h3>
+                        {cartItems.length === 0 && <div> Favorites are empty </div>}
+                        <h5>
+                            {cartItems.map((item) => (
+                                <div>{item.name}, {item.color}  ${item.price}</div>
+                            ))}
+                        </h5>
+                    </div>
+                    <div>
+                        <h3>Favorites Price: ${itemsPrice}</h3>
                     </div>
                 </div>
                 

@@ -84,7 +84,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Athletic Apparel Store</h1>
+        <h1>Ascend Apparel</h1>
       </header>
       
       <body className="App-body">
@@ -100,28 +100,28 @@ function App() {
                 ))}
               </div>
             </div>
-
-            <div class="col-sm-4"> 
-            <div className="col-12">
+          
+          <div class="col-sm-4"> 
+            <div>
+              <Nav onSelect={selectFilterType}>
+              <Nav.Item class="active"><Nav.Link eventKey="All"> All </Nav.Link></Nav.Item>
+              </Nav>
               <h4>
-                Favorites Price:
-                <Cart onAddItem={onAddItem} onDeleteItem={onDeleteItem} cartItems={cartItems} itemsPrice={itemsPrice}></Cart>
-              </h4>
-            </div>  
-            <div className="col-12">
-              <h4>
-                Filters
+                Brand
               </h4>
               <Nav onSelect={selectFilterType}>
-              <FilterButton selectFilterType={selectFilterType} eventKey={"All"}></FilterButton>
-              <FilterButton selectFilterType={selectFilterType} eventKey={"Alphalete"}></FilterButton>
-              <FilterButton selectFilterType={selectFilterType} eventKey={"Alo Yoga"}></FilterButton>
-              <FilterButton selectFilterType={selectFilterType} eventKey={"Lululemon"}></FilterButton>
-              <FilterButton selectFilterType={selectFilterType} eventKey={"Nike"}></FilterButton>
-              <FilterButton selectFilterType={selectFilterColor} eventKey={"Black"}></FilterButton>
-              <FilterButton selectFilterType={selectFilterColor} eventKey={"Blue"}></FilterButton>
-              <FilterButton selectFilterType={selectFilterColor} eventKey={"Pink"}></FilterButton>
-
+              <Nav.Item><Nav.Link eventKey="Alphalete"> Alphalete </Nav.Link></Nav.Item>
+              <Nav.Item><Nav.Link eventKey="Alo Yoga"> Alo Yoga </Nav.Link></Nav.Item>
+              <Nav.Item><Nav.Link eventKey="Lululemon"> Lululemon </Nav.Link></Nav.Item>
+              <Nav.Item><Nav.Link eventKey="Nike"> Nike </Nav.Link></Nav.Item>
+              </Nav>
+              <h4>
+                Color 
+              </h4>
+              <Nav onSelect={selectFilterType}>
+              <Nav.Item><Nav.Link eventKey="Black"> Black </Nav.Link></Nav.Item>
+              <Nav.Item><Nav.Link eventKey="Blue"> Blue </Nav.Link></Nav.Item>
+              <Nav.Item><Nav.Link eventKey="Pink"> Pink </Nav.Link></Nav.Item>
               </Nav>
               <h4>
                 Sort 
@@ -132,7 +132,14 @@ function App() {
 
               </Nav>
 
-            </div>                
+            </div>  
+
+            <div className="col-12">
+              <h4>
+                <Cart onAddItem={onAddItem} onDeleteItem={onDeleteItem} cartItems={cartItems} itemsPrice={itemsPrice}></Cart>
+              </h4>
+            </div>  
+
             </div>
           </div>
         </div>
