@@ -1,8 +1,16 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+
 
 export default function Cart(props) {
     const {cartItems, emptyCart, itemsPrice} = props;
     // const itemsPrice = cartItems.reduce((a,c) => a + c.price, 0);
+
+    function clearCart(item){
+        emptyCart(item);
+    }
 
     return (
         <div>
@@ -21,6 +29,7 @@ export default function Cart(props) {
                     <div>
                         <h3>Favorites Price: ${itemsPrice}</h3>
                     </div>
+                    <Button onClick={()=> clearCart(cartItems)}> Empty Cart </Button> 
                 </div>
                 
             )}
