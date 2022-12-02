@@ -7,8 +7,6 @@ import ProductItem from "./components/ProductItem.js";
 import Cart from "./components/Cart.js"
 import { ListGroup } from "react-bootstrap";
 import { Nav } from 'react-bootstrap';
-import FilterButton from './components/FilterButton';
-import { createPortal } from 'react-dom';
 
 function App() {
 
@@ -103,13 +101,11 @@ function App() {
           
           <div class="col-sm-4"> 
             <div>
-              <Nav onSelect={selectFilterType}>
-              <Nav.Item class="active"><Nav.Link eventKey="All"> All </Nav.Link></Nav.Item>
-              </Nav>
               <h4>
                 Brand
               </h4>
               <Nav onSelect={selectFilterType}>
+              <Nav.Item class="active"><Nav.Link eventKey="All"> All </Nav.Link></Nav.Item>
               <Nav.Item><Nav.Link eventKey="Alphalete"> Alphalete </Nav.Link></Nav.Item>
               <Nav.Item><Nav.Link eventKey="Alo Yoga"> Alo Yoga </Nav.Link></Nav.Item>
               <Nav.Item><Nav.Link eventKey="Lululemon"> Lululemon </Nav.Link></Nav.Item>
@@ -118,7 +114,8 @@ function App() {
               <h4>
                 Color 
               </h4>
-              <Nav onSelect={selectFilterType}>
+              <Nav onSelect={selectFilterColor}>
+              <Nav.Item class="active"><Nav.Link eventKey="All"> All </Nav.Link></Nav.Item>
               <Nav.Item><Nav.Link eventKey="Black"> Black </Nav.Link></Nav.Item>
               <Nav.Item><Nav.Link eventKey="Blue"> Blue </Nav.Link></Nav.Item>
               <Nav.Item><Nav.Link eventKey="Pink"> Pink </Nav.Link></Nav.Item>
