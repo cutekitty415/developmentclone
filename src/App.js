@@ -18,8 +18,13 @@ function App() {
     setCartItems([...cartItems, {...item, qty: 1}]);
   }
 
-  const onDeleteItem = (item) => {
+  const 
+  Item = (item) => {
     setCartItems(cartItems.filter((x) => x.name !== item.name));
+  }
+  
+  const emptyCart = (item) => {
+    setCartItems([]);
   }
 
   const [type, setType] = useState("All");
@@ -133,7 +138,7 @@ function App() {
 
             <div className="col-12">
               <h4>
-                <Cart onAddItem={onAddItem} onDeleteItem={onDeleteItem} cartItems={cartItems} itemsPrice={itemsPrice}></Cart>
+                <Cart cartItems={cartItems} emptyCart={emptyCart} itemsPrice={itemsPrice}></Cart>
               </h4>
             </div>  
 
