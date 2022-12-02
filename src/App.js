@@ -23,9 +23,6 @@ function App() {
     setCartItems(cartItems.filter((x) => x.name !== item.name));
   }
   
-  const emptyCart = (item) => {
-    setCartItems([]);
-  }
 
   const [type, setType] = useState("All");
 
@@ -138,7 +135,7 @@ function App() {
 
             <div className="col-12">
               <h4>
-                <Cart cartItems={cartItems} emptyCart={emptyCart} itemsPrice={itemsPrice}></Cart>
+                <Cart cartItems={cartItems} itemsPrice={itemsPrice}></Cart>
               </h4>
             </div>  
 
