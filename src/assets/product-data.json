@@ -61,5 +61,26 @@
         "price": 128, 
         "color": "Pink",
         "image": "images/definepink.png"
+    },
+    {
+        "name": "Cropped Graphic Tank", 
+        "brand": "Nike", 
+        "price": 40, 
+        "color": "Black",
+        "image": "images/cropblack.png"
+    },
+    {
+        "name": "Cropped Graphic Tank", 
+        "brand": "Nike", 
+        "price": 40, 
+        "color": "Blue",
+        "image": "images/cropblue.png"
+    },
+    {
+        "name": "Cropped Graphic Tank", 
+        "brand": "Nike", 
+        "price": 40, 
+        "color": "Pink",
+        "image": "images/croppink.png"
     }
   ]
