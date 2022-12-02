@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Amplify Leggings", 
+        "brand": "Alphalete", 
+        "price": 78, 
+        "color": "Black",
+        "image": "images/amplifyblack.png"
+    },
+    {
+        "name": "Amplify Leggings", 
+        "brand": "Alphalete", 
+        "price": 78, 
+        "color": "Blue",
+        "image": "images/amplifyblue.png"
+    },
+    {
+        "name": "Amplify Leggings", 
+        "brand": "Alphalete", 
+        "price": 78, 
+        "color": "Pink",
+        "image": "images/amplifypink.png"
+    },
+    {
+        "name": "Airbrush Bra Tank", 
+        "brand": "Alo Yoga", 
+        "price": 74, 
+        "color": "Black",
+        "image": "images/airliftblack.png"
+    },
+    {
+        "name": "Airbrush Bra Tank", 
+        "brand": "Alo Yoga", 
+        "price": 74, 
+        "color": "Blue",
+        "image": "images/airliftblue.png"
+    },
+    {
+        "name": "Airbrush Bra Tank", 
+        "brand": "Alo Yoga", 
+        "price": 74, 
+        "color": "Pink",
+        "image": "images/airliftpink.png"
+    },
+    {
+        "name": "Define Jacket", 
+        "brand": "Lululemon", 
+        "price": 128, 
+        "color": "Black",
+        "image": "images/defineblack.png"
+    },
+    {
+        "name": "Define Jacket", 
+        "brand": "Lululemon", 
+        "price": 128, 
+        "color": "Blue",
+        "image": "images/defineblue.png"
+    },
+    {
+        "name": "Define Jacket", 
+        "brand": "Lululemon", 
+        "price": 128, 
+        "color": "Pink",
+        "image": "images/definepink.png"
+    }
+  ]
