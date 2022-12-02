@@ -1,7 +1,7 @@
 # Development
 
 ### Link to Deployed Website
-https://cutekitty415.github.io/development
+https://cutekitty415.github.io/developmentclone/
 
 ### Goal and Value of the Application
 The goal of this application is for users to buy carefully-curated and high-quality athletic apparel from a variety of different brands. Although there are many good companies that produce athletic sportswear in today's market, it can be difficult for users to navigate through and choose the best products. Therefore, the value of this application is that it saves users time from browsing many different brands' websites and also allows users to choose from only the best products from each brand.
